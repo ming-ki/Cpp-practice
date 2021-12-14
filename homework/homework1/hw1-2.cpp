@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <cstdlib>
 #include <ctime>
 using namespace std;
@@ -62,8 +62,8 @@ int SelectableRandom::nextInRange(int front, int end) {
 int main(void) {
 	srand((unsigned)time(0));
 	SelectableRandom selectRandom(true);  
-	cout << "20201509 ¾È¹ÎÁö" << endl;
-	cout << "-- 0¿¡¼­" << RAND_MAX << "±îÁöÀÇ Â¦¼ö ·£´ý Á¤¼ö 10°³--" << endl;
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl;
+	cout << "-- 0ì—ì„œ" << RAND_MAX << "ê¹Œì§€ì˜ ì§ìˆ˜ ëžœë¤ ì •ìˆ˜ 10ê°œ--" << endl;
 
 	for (int i = 0; i < 10; i++) {
 		int n = selectRandom.next();	
@@ -71,7 +71,7 @@ int main(void) {
 	}
 
 	selectRandom.setOption(false);		
-	cout << endl << endl << "--2¿¡¼­ " << "9 ±îÁöÀÇ ·£´ý È¦¼ö Á¤¼ö 10°³ --" << endl;
+	cout << endl << endl << "--2ì—ì„œ " << "9 ê¹Œì§€ì˜ ëžœë¤ í™€ìˆ˜ ì •ìˆ˜ 10ê°œ --" << endl;
 
 	for (int i = 0; i < 10; i++) {
 		int n = selectRandom.nextInRange(2, 9);	

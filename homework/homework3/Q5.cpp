@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 
@@ -33,21 +33,21 @@ public:
 			availableCount -= pages;
 			availableInk -= pages;
 			printedCount += pages;
-			cout << "ÇÁ¸°Æ®ÇÏ¿´½À´Ï´Ù." << endl;
+			cout << "í”„ë¦°íŠ¸í•˜ì˜€ìŠµë‹ˆë‹¤." << endl;
 			return true;
 		}
 		else if (availableCount < pages) {
-			cout << "¿ëÁö°¡ ºÎÁ·ÇÏ¿© ÇÁ¸°Æ® ÇÒ ¼ö ¾ø½À´Ï´Ù.\n";
+			cout << "ìš©ì§€ê°€ ë¶€ì¡±í•˜ì—¬ í”„ë¦°íŠ¸ í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n";
 			return false;
 		}
 		else if (availableInk< pages) {
-			cout << "À×Å©°¡ ºÎÁ·ÇÏ¿© ÇÁ¸°Æ® ÇÒ ¼ö ¾ø½À´Ï´Ù.\n";
+			cout << "ìž‰í¬ê°€ ë¶€ì¡±í•˜ì—¬ í”„ë¦°íŠ¸ í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n";
 			return false;
 		}
 		return false;
 	}
 	virtual void show() {
-		cout << model << ", " << manuf << ", ³²Àº Á¾ÀÌ " << availableCount << "Àå, ³²Àº À×Å© " << availableInk << endl;
+		cout << model << ", " << manuf << ", ë‚¨ì€ ì¢…ì´ " << availableCount << "ìž¥, ë‚¨ì€ ìž‰í¬ " << availableInk << endl;
 	}
 };
 
@@ -63,48 +63,48 @@ public:
 			availableCount -= pages;
 			availableToner--;
 			printedCount += pages;
-			cout << "ÇÁ¸°Æ®ÇÏ¿´½À´Ï´Ù." << endl;
+			cout << "í”„ë¦°íŠ¸í•˜ì˜€ìŠµë‹ˆë‹¤." << endl;
 			return true;
 		}
 		else if (availableCount < pages) {
-			cout << "¿ëÁö°¡ ºÎÁ·ÇÏ¿© ÇÁ¸°Æ® ÇÒ ¼ö ¾ø½À´Ï´Ù.\n";
+			cout << "ìš©ì§€ê°€ ë¶€ì¡±í•˜ì—¬ í”„ë¦°íŠ¸ í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n";
 			return false;
 		}
 		else if (availableToner <= 0) {
-			cout << "Åä³Ê°¡ ºÎÁ·ÇÏ¿© ÇÁ¸°Æ® ÇÒ ¼ö ¾ø½À´Ï´Ù.\n";
+			cout << "í† ë„ˆê°€ ë¶€ì¡±í•˜ì—¬ í”„ë¦°íŠ¸ í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n";
 			return false;
 		}
 		return false;
 	}
 	virtual void show() {
-		cout << model << ", " << manuf << ", ³²Àº Á¾ÀÌ " << availableCount << "Àå, ³²Àº Åä³Ê " << availableToner << endl;
+		cout << model << ", " << manuf << ", ë‚¨ì€ ì¢…ì´ " << availableCount << "ìž¥, ë‚¨ì€ í† ë„ˆ " << availableToner << endl;
 	}
 };
 
 int main() {
 	InkJetPrinter* inkPrn = new InkJetPrinter("Officejet V40", "HP", 0, 5, 10);
-	LaserPrinter* laserPrn = new LaserPrinter("SCX-6x45", "»ï¼ºÀüÀÚ", 0, 3, 20);
-	cout << "ÇöÀç ÀÛµ¿ÁßÀÎ 2´ëÀÇ ÇÁ¸°ÅÍ´Â ¾Æ·¡¿Í °°´Ù." << endl;
-	cout << "À×Å©Á¬ : ";
+	LaserPrinter* laserPrn = new LaserPrinter("SCX-6x45", "ì‚¼ì„±ì „ìž", 0, 3, 20);
+	cout << "í˜„ìž¬ ìž‘ë™ì¤‘ì¸ 2ëŒ€ì˜ í”„ë¦°í„°ëŠ” ì•„ëž˜ì™€ ê°™ë‹¤." << endl;
+	cout << "ìž‰í¬ì ¯ : ";
 	inkPrn->show();
-	cout << "·¹ÀÌÀú : ";
+	cout << "ë ˆì´ì € : ";
 	laserPrn->show();
 	int type, pages;
 	char input;
 	do {
-		cout << "\nÇÁ¸°ÅÍ(1:À×Å©Á¬, 2:·¹ÀÌÀú)¿Í ¸Å¼ö ÀÔ·Â >> ";
+		cout << "\ní”„ë¦°í„°(1:ìž‰í¬ì ¯, 2:ë ˆì´ì €)ì™€ ë§¤ìˆ˜ ìž…ë ¥ >> ";
 		cin >> type >> pages;
 		if (type == 1)
 			inkPrn->print(pages);
 		else if (type == 2)
 			laserPrn->print(pages);
 		else {
-			cout << "Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù.\n";
+			cout << "ìž˜ëª» ìž…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤.\n";
 			return 0;
 		}
 		inkPrn->show();
 		laserPrn->show();
-		cout << "°è¼Ó ÇÁ¸°Æ® ÇÏ½Ã°Ú½À´Ï±î?(y/n) >> ";
+		cout << "ê³„ì† í”„ë¦°íŠ¸ í•˜ì‹œê² ìŠµë‹ˆê¹Œ?(y/n) >> ";
 		cin >> input;
 	} while (input == 'y');
 	return 0;

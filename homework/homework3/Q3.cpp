@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 class AbstractStack {
@@ -34,16 +34,16 @@ int main() {
 	IntStack a;
 	for (int i = 0; i < 15; i++) {
 		if (a.push(i))
-			cout << "push ¼º°ø" << endl;
+			cout << "push ì„±ê³µ" << endl;
 		else
-			cout << "½ºÅÃÀÌ °¡µæ Ã¡½À´Ï´Ù.\n";
+			cout << "ìŠ¤íƒì´ ê°€ë“ ì°¼ìŠµë‹ˆë‹¤.\n";
 
 	}
 	int n;
 	for (int i = 0; i < 15; i++) {
 		if (a.pop(n))
-			cout << "pop ¼º°ø " << n << endl;
+			cout << "pop ì„±ê³µ " << n << endl;
 		else
-			cout << "½ºÅÃÀÌ ºñ¾ú½À´Ï´Ù.\n";
+			cout << "ìŠ¤íƒì´ ë¹„ì—ˆìŠµë‹ˆë‹¤.\n";
 	}
 }

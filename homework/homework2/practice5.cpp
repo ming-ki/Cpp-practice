@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 
@@ -18,29 +18,29 @@ void Person::set(string name, string tel) {
 
 
 int main() {
-	cout << "20201509 ¾È¹ÎÁö" << endl;
-	cout << "ÀÌ¸§°ú ÀüÈ­ ¹øÈ£¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä" << endl;
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl;
+	cout << "ì´ë¦„ê³¼ ì „í™” ë²ˆí˜¸ë¥¼ ìž…ë ¥í•´ ì£¼ì„¸ìš”" << endl;
 	Person personArray[3];
 	string name, tel,search;
 	for (int i = 0; i < 3; i++)
 	{
-		cout << "»ç¶÷" << i + 1 << ">>";
+		cout << "ì‚¬ëžŒ" << i + 1 << ">>";
 		getline(cin, name, ' ');
 		getline(cin, tel, '\n');
 		personArray[i].set(name, tel);
 	}
-	cout << "¸ðµç »ç¶÷ÀÇ ÀÌ¸§Àº ";
+	cout << "ëª¨ë“  ì‚¬ëžŒì˜ ì´ë¦„ì€ ";
 	for (int i = 0; i < 3; i++)
 	{
 		cout << personArray[i].getName()<< " ";
 	}
 	cout << "\n";
-	cout << "ÀüÈ­¹øÈ£¸¦ °Ë»öÇÕ´Ï´Ù. ";
-	cout << "ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä >>";
+	cout << "ì „í™”ë²ˆí˜¸ë¥¼ ê²€ìƒ‰í•©ë‹ˆë‹¤. ";
+	cout << "ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš” >>";
 	cin >> search;
 	for (int i = 0; i < 3; i++) {
 		if (search == personArray[i].getName())
 			search = personArray[i].getTel();
 	}
-	cout << "ÀüÈ­¹øÈ£´Â "<<search;
+	cout << "ì „í™”ë²ˆí˜¸ëŠ” "<<search;
 }

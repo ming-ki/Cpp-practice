@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 class Stack {
@@ -32,7 +32,7 @@ bool Stack::operator!() {
 }
 
 int main() {
-	cout << "20201509 ¾È¹ÎÁö" << endl;
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl;
 	Stack stack;
 	stack << 3 << 5 << 10;
 	while (true) {

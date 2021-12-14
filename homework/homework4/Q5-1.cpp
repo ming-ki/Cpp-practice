@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 class Color {
@@ -31,7 +31,7 @@ bool Color::operator==(Color op2) {
 }
 
 int main() {
-	cout << "20201509 ¾È¹ÎÁö" << endl;
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl;
 
 	Color red(255, 0, 0), blue(0, 0, 255), c;
 	c = red + blue;
@@ -39,7 +39,7 @@ int main() {
 
 	Color fuchsia(255, 0, 255);
 	if (c == fuchsia)
-		cout << "º¸¶ó»ö ¸ÂÀ½";
+		cout << "ë³´ë¼ìƒ‰ ë§žìŒ";
 	else
-		cout << "º¸¶ó»ö ¾Æ´Ô";
+		cout << "ë³´ë¼ìƒ‰ ì•„ë‹˜";
 }

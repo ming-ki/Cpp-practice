@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 
 int main() {
 	string str;
-	cout << "20201509 ¾È¹ÎÁö" << endl;
-	cout << "¹®ÀÚ¿­ ÀÔ·Â >> ";
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl;
+	cout << "ë¬¸ìì—´ ì…ë ¥ >> ";
 	getline(cin, str, '\n');
 	int sum = 0;
 	int index = 0; 
@@ -16,7 +16,7 @@ int main() {
 		if (str.at(i) == 'a')
 			sum++;
 	}
-	cout << "¹®ÀÚ a´Â " << sum << "°³ ÀÖ½À´Ï´Ù."<<endl;
+	cout << "ë¬¸ì aëŠ” " << sum << "ê°œ ìˆìŠµë‹ˆë‹¤."<<endl;
 	//3-2
 	while (true)
 	{
@@ -24,5 +24,5 @@ int main() {
 		index = str.find('a', index) + 1;
 		count++;
 	}
-	cout << "¹®ÀÚ a´Â " << count << "°³ ÀÖ½À´Ï´Ù.";
+	cout << "ë¬¸ì aëŠ” " << count << "ê°œ ìˆìŠµë‹ˆë‹¤.";
 }

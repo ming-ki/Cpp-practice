@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 class Sample {
@@ -36,9 +36,9 @@ int Sample::big() {
 }
 
 int main() {
-	cout << "20201509 ¾È¹ÎÁö" << endl;
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl;
 	Sample s(10);
 	s.read();
 	s.write();
-	cout << "°¡Àå Å« ¼ö´Â " << s.big() << endl;
+	cout << "ê°€ìž¥ í° ìˆ˜ëŠ” " << s.big() << endl;
 }

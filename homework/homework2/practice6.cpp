@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 
@@ -33,7 +33,7 @@ CircleManager::CircleManager(int size) {
 	
 	for (int i = 0; i < size; i++)
 	{
-		cout << "¿ø " << i + 1 << "ÀÇ ÀÌ¸§°ú ¹ÝÁö¸§ >> ";
+		cout << "ì› " << i + 1 << "ì˜ ì´ë¦„ê³¼ ë°˜ì§€ë¦„ >> ";
 		cin >> n >> r;
 		p[i].setCircle(n, stoi(r));
 	}
@@ -41,12 +41,12 @@ CircleManager::CircleManager(int size) {
 
 void CircleManager::searchByName() {
 	string name;
-	cout << "°Ë»öÇÏ°íÀÚ ÇÏ´Â ¿øÀÇ ÀÌ¸§ >> ";
+	cout << "ê²€ìƒ‰í•˜ê³ ìž í•˜ëŠ” ì›ì˜ ì´ë¦„ >> ";
 	cin >> name;
 	for (int i = 0; i < size; i++) {
 		if (p[i].getName() == name)
 		{
-			cout << p[i].getName() << "ÀÇ ¸éÀûÀº " << p[i].getArea() << endl;
+			cout << p[i].getName() << "ì˜ ë©´ì ì€ " << p[i].getArea() << endl;
 		}
 		
 	}
@@ -54,21 +54,21 @@ void CircleManager::searchByName() {
 
 void CircleManager::searchByArea() {
 	int num;
-	cout << "ÃÖ¼Ò ¸éÀûÀ» Á¤¼ö·Î ÀÔ·ÂÇÏ¼¼¿ä >> ";
+	cout << "ìµœì†Œ ë©´ì ì„ ì •ìˆ˜ë¡œ ìž…ë ¥í•˜ì„¸ìš” >> ";
 	cin >> num;
-	cout << num << "º¸´Ù Å« ¿øÀ» °Ë»öÇÕ´Ï´Ù."<<endl;
+	cout << num << "ë³´ë‹¤ í° ì›ì„ ê²€ìƒ‰í•©ë‹ˆë‹¤."<<endl;
 	for (int i = 0; i < size; i++) {
 		if (p[i].getArea() > num)
 		{
-			cout << p[i].getName() << "ÀÇ ¸éÀûÀº " << p[i].getArea() << ", ";
+			cout << p[i].getName() << "ì˜ ë©´ì ì€ " << p[i].getArea() << ", ";
 		}
 	}
 }
 
 int main() {
-	cout << "20201509 ¾È¹ÎÁö" << endl;
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl;
 	int CircleNum;
-	cout << "¿øÀÇ °³¼ö >> ";
+	cout << "ì›ì˜ ê°œìˆ˜ >> ";
 	cin >> CircleNum;
 	CircleManager cm(CircleNum);
 	cm.searchByName();

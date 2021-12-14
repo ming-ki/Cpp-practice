@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 using namespace std;
@@ -13,7 +13,7 @@ public:
 		this->pages = pages;
 	}
 	void show() {
-		cout << title << ' ' << price << "¿ø " << pages << " ÆäÀÌÁö" << endl;
+		cout << title << ' ' << price << "ì› " << pages << " íŽ˜ì´ì§€" << endl;
 	}
 	string getTitle() { return title; }
 
@@ -28,10 +28,10 @@ bool operator<(string op1, Book& op2) {
 
 
 int main() {
-	cout << "20201509 ¾È¹ÎÁö" << endl << endl;
-	Book a("Ã»Ãá", 20000, 300);
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl << endl;
+	Book a("ì²­ì¶˜", 20000, 300);
 	string b;
-	cout << "Ã¥ ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä>>";
+	cout << "ì±… ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”>>";
 	getline(cin, b);
-	if (b < a) cout << a.getTitle() << "ÀÌ " << b << "º¸´Ù µÚ¿¡ ÀÖ±¸³ª!" << endl;
+	if (b < a) cout << a.getTitle() << "ì´ " << b << "ë³´ë‹¤ ë’¤ì— ìžˆêµ¬ë‚˜!" << endl;
 }

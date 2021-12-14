@@ -1,16 +1,16 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 #include <cstdlib>
 #include <ctime>
 using namespace std;
 
 int main() {
-	cout << "20201509 ¾È¹ÎÁö" << endl;
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl;
 	string str;
 	//srand((unsigned)time(0));
 	int n;
 	while (true) {
-		cout << "¾Æ·¡¿¡ ÇÑ ÁÙÀ» ÀÔ·ÂÇÏ¼¼¿ä.(exit¸¦ ÀÔ·ÂÇÏ¸é Á¾·áÇÕ´Ï´Ù)" << endl;
+		cout << "ì•„ëž˜ì— í•œ ì¤„ì„ ìž…ë ¥í•˜ì„¸ìš”.(exitë¥¼ ìž…ë ¥í•˜ë©´ ì¢…ë£Œí•©ë‹ˆë‹¤)" << endl;
 		cout << ">> ";
 		getline(cin, str, '\n');
 		

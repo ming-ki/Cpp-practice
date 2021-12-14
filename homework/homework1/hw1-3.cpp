@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 
@@ -17,7 +17,7 @@ public:
 
 int main() {
 	Integer n(30);
-	cout << "20201509 ¾È¹ÎÁö" << endl;
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl;
 	cout << n.get() << ' ';
 	n.set(50);
 	cout << n.get() << ' ';

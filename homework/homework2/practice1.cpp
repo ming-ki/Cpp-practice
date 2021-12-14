@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 class Color {
@@ -11,7 +11,7 @@ public:
 };
 
 int main() {
-	cout << "20201509 ¾È¹ÎÁö" << endl;
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl;
 	Color screenColor(255, 0, 0);
 	Color* p;
 	p = &screenColor;

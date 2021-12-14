@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 using namespace std;
@@ -8,7 +8,7 @@ class Circle {
 public:
 	Circle(int radius = 0) { this->radius = radius; }
 	void show() {
-		cout << "radius = " << radius << " ÀÎ ¿ø" << endl;
+		cout << "radius = " << radius << " ì¸ ì›" << endl;
 	}
 
 	friend Circle& operator++(Circle& op1);
@@ -28,7 +28,7 @@ Circle& operator++(Circle& op1, int x) {
 }
 
 int main() {
-	cout << "20201509 ¾È¹ÎÁö" << endl << endl;
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl << endl;
 
 	Circle a(5), b(4);
 	++a;

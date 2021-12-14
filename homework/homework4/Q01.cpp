@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 
@@ -12,7 +12,7 @@ public:
 		this->pages = pages;
 	}
 	void show() {
-		cout << title << ' ' << price << "¿ø " << pages << " ÆäÀÌÁö" << endl;
+		cout << title << ' ' << price << "ì› " << pages << " íŽ˜ì´ì§€" << endl;
 	}
 	string getTitle() { return title; }
 	Book operator+= (int op2);
@@ -29,8 +29,8 @@ Book Book::operator-=(int op2) {
 }
 
 int main() {
-	cout << "20201509 ¾È¹ÎÁö" << endl;
-	Book a("Ã»Ãá", 20000, 300), b("¹Ì·¡", 30000, 500);
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl;
+	Book a("ì²­ì¶˜", 20000, 300), b("ë¯¸ëž˜", 30000, 500);
 	a += 500;
 	b -= 500;
 	a.show();
