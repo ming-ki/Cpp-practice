@@ -20,9 +20,9 @@ bool Book::operator!() {
 }
 
 int main() {
-	cout << "20201509 ¾È¹ÎÁö" << endl;
-	Book book("º­·è½ÃÀå", 0, 50);
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl;
+	Book book("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 0, 50);
 
 	if (!book)
-		cout << "°øÂ¥´Ù" << endl;
+		cout << "ï¿½ï¿½Â¥ï¿½ï¿½" << endl;
 }
