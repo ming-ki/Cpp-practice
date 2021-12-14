@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 #include "hw1-5.h"
 
@@ -18,9 +18,9 @@ int main() {
 	Exp a(3, 2);
 	Exp b(9);
 	Exp c;
-	cout << "20201509 ¾È¹ÎÁö" << endl;
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl;
 	cout << a.getValue() << ' ' << b.getValue() << ' ' << c.getValue() << endl;
-	cout << "aÀÇ º£ÀÌ½º " << a.getBase() << ',' << "Áö¼ö " << a.getExp() << endl;
+	cout << "aì˜ ë² ì´ìŠ¤ " << a.getBase() << ',' << "ì§€ìˆ˜ " << a.getExp() << endl;
 
 	if (a.equals(b))
 		cout << "same" << endl;

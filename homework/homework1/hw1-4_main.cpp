@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 #include "hw1-4.h"
 
@@ -8,6 +8,6 @@ int main() {
 	ram.write(101, 30);
 	char res = ram.read(100) + ram.read(101);
 	ram.write(102, res);
-	cout << "20201509 ¾È¹ÎÁö" << endl;
-	cout << "102 ¹øÁöÀÇ °ª = " << (int) ram.read(102) << endl;
+	cout << "20201509 ì•ˆë¯¼ì§€" << endl;
+	cout << "102 ë²ˆì§€ì˜ ê°’ = " << (int) ram.read(102) << endl;
 }
